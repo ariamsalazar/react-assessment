@@ -6,7 +6,7 @@ To complete this assessment, you will need to write a simple [React](https://fac
 
 The purpose of this assessment is to assess your **skills and approach to composing a simple web app** given an API feed.  We will also assess the **generated HTML, CSS, and JS** output.
 
-This assessment is expected to take about 1-2 hours.
+This assessment is expected to take about 2-3 hours.
 
 ## What to do?
 
