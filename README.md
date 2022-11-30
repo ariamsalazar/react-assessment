@@ -6,11 +6,13 @@ To complete this assessment, you will need to write a simple [React](https://fac
 
 The purpose of this assessment is to assess your **skills and approach to composing a simple web app** given an API feed.  We will also assess the **generated HTML, CSS, and JS** output.
 
-This assessment is expected to take about 2-3 hours.
+This assessment is expected to take about 2-4 hours.
 
 ## What to do?
 
-Your goal is to implement a simple React application, where users will be able to view a job candidate's video responses, comment on the responses & save the data. The UX/UI is totally up to you.
+Your goal is to implement a simple React application, where users will be able to view a job candidate's video responses, comment on the responses & save the data. The application sohuld use Typescript and Next.js. It has to follow the following mock ups:
+
+- https://www.figma.com/file/hT5dRsdr4BVXZKmw5yVA8g/FRONTEND-TEST?node-id=1%3A21&t=WKMXeMma1ieVfZSJ-1
 
 Although its a very basic exercise, we will be looking for simple, well-designed, well-commented and reliable code in the submission.
 
@@ -21,22 +23,40 @@ Also, add very short info for the following to your `README`:
 * Are there any improvements you could make to your submission?
 * What would you do differently if you were allocated more time?
 
-Once you complete implementation, please send us the link to the hosted Github repository.
+## Tasks
 
-## How should the application work?
+**REST API**
 
-The user of this react application should be able to view the video response(s) of job candidates applying for a job at their company. The application should have the following workflow:
+  - Fetch flight results from the provided flights API.
 
-1. Choose candidate from a list.
-2. Depending on the selection in the first step, if the selected candidate has an application, display the video response(s) of the candidate with the relevant question displayed in text. If the selected candidate does not have an application, display appropriate message.
-3. For each video response of a candidate, provide an option to enter comments.
-4. Provide a "Save" button that saves the comments to the api.json file.
+**Itineraries List**
+
+  - Create a screen to LIST all of the itineraries with the required filters.
+
+**Itinerary Detail**
+
+  - Create a screen to LIST the legs that are part of a selected itinerary
+
+## Flight results
+
+The provided API will return two collections of different items:
+
+* **Itineraries** - These are the containers for your trips, tying together **Legs**, and **prices**. Prices are offered by an **agent** - an airline or travel agent.
+
+* **Legs** - These are journeys (outbound, return) with **duration**, **stops** and **airlines**.
+
+## Submission Guidelines
+
+* A fork of this repository should be submitted to david@auxo.co with the implemented tasks in no less than 6h of the start of the assesment. However, the assesment is expected to take less than 4h. The amount of time you take to take the assesment has no effect in the results.
+
+## Evaluation Criteria
+
+* Your implementation works as described in the [task](#task).
+* Quality of the implemented code
+* Design decisions (models, UI design, relationships between entities, etc)
+* Videocall to explain the implemented code to the Auxo team and answer further questions
 
 ## Requirements
-
-* Only step 1 should be visible when no candidate is picked. Steps 2,3 and 4 should be visible only when a candidate is picked. Whether the steps 2,3,4 should be displayed on the side or in a different route is up to you.
-
-* User should be able to change candidate selection at any time.
 
 * You can use whatever libraries, frameworks, task runners and build processes you like. React is the only requirement.
 
@@ -46,9 +66,9 @@ API can be launched using npm start. You will need to run npm install once you s
 
 | Endpoint                     | Result                                              |
 |------------------------------|-----------------------------------------------------|
-| /candidates                  | Lists all available candidates                      |
-| /questions                   | Lists all available questions                       |
-| /applications                | Lists all available applications                    |
+| /itineraries                 | Lists all available itineraries                     |
+| /legs                        | Lists all available questions                       |
+|------------------------------|-----------------------------------------------------|
 
 More info about API usage can be found at the [json-server repo](https://github.com/typicode/json-server).
 
