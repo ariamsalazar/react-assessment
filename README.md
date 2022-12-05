@@ -72,7 +72,12 @@ API can be launched using npm start. You will need to run npm install once you s
 
 ## Run project
 
-1. Install dependencies:
+1. Go to my-app folder:
+```bash
+cd my-app
+```
+
+2. Install dependencies:
 
 ```bash
 npm install
