@@ -1,0 +1,45 @@
+@import '../../assets/styles/constants.scss';
+
+.list-container {
+	width: 100%;
+	margin-top: 3rem;
+}
+
+.table {
+	width: 100%;
+}
+
+.table-header {
+	font-size: 12px;
+	font-weight: 400;
+	border: none !important;
+	text-align: center;
+	color: $gray-400;
+	padding: 8px;
+	border: none !important;
+}
+
+.table-row {
+	cursor: pointer;
+	border: 1px solid red;
+	border-radius: 5px;
+}
+
+.table-row:hover {
+	background-color: $green-light;
+}
+
+.table-row-item {
+	font-size: 12px;
+	padding: 13px !important;
+	color: $gray-500;
+	text-align: center;
+	text-align: center;
+}
+
+.name-agent {
+	width: 40%;
+	text-align: left;
+	padding-left: 20%;
+	display: inline-block;
+}

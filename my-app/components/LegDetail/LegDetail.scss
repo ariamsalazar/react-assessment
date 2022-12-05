@@ -1,0 +1,101 @@
+@import '../../assets/styles/constants.scss';
+
+.leg-container {
+	width: 100%;
+	margin-top: 2rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.leg-checkbox {
+	width: 200px;
+	text-align: center;
+}
+
+.leg-card {
+	width: 489px;
+	border-radius: 8px;
+}
+
+.leg-header {
+	width: 100%;
+	border-radius: 8px 8px 0px 0px;
+	background-color: $gray-250;
+	font-size: 12px;
+	color: $gray-500;
+	padding: 18px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+}
+
+.leg-id {
+	color: $blue-primary;
+	font-size: 14px;
+	text-transform: capitalize;
+}
+
+.leg-agent {
+	box-sizing: border-box;
+	padding-left: 2rem;
+}
+
+.leg-details {
+	padding: 30px 50px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.airline-id {
+	text-transform: uppercase;
+	font-size: 12px;
+	color: $gray-300;
+	font-weight: bold;
+}
+
+.airline-value {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	color: $gray-400;
+}
+
+.leg-item {
+	display: flex;
+	justify-content: space-between;
+}
+
+.leg-c {
+	width: 45%;
+	margin-top: 30px;
+}
+
+.airport-leg-c {
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 12px;
+	color: $gray-400;
+}
+
+.airport-time {
+	font-size: 12px;
+	font-weight: 300;
+	color: $gray-400;
+	margin-top: 16px;
+	background-image: url('../../public/images/airplane.png');
+	background-size: 30px;
+	background-repeat: no-repeat;
+	background-position: left;
+	text-align: center;
+	width: 100%;
+	display: inline-block;
+}
+
+.leg-footer {
+	margin-top: 30px;
+	width: 100%;
+	text-align: center;
+}
